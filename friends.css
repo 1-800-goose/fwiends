@@ -48,7 +48,7 @@ img {
 
 /* day & night image source: https://8pxl.tumblr.com/post/159546351330/morning-vs-night */
 #photos {
-  background-image: url("img/day.gif");
+  background-image: url("img/day.png");
   background-size: auto;
   display: flex;
   flex-wrap: wrap;
@@ -56,7 +56,7 @@ img {
 }
 
 #photos.night {
-  background-image: url("img/night.gif");
+  background-image: url("img/night.png");
 }
 
 button {
