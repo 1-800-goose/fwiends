@@ -53,7 +53,10 @@
     let select = Math.floor((PHOTOS.length) * Math.random());
     friend.src = PHOTOS[select];
     friend.alt = PHOTOS_ALT[select];
-    id("photos").appendChild(friend);
+    if(id("photos").childNodes.length==0) {
+      id("photos").appendChild(friend);
+    }
+    id("photos").insertBefore(friend, id("photos").firstChild);
   }
 
   /** this function takes away the last stuffed animal image */
